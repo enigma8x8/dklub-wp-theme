@@ -1,0 +1,364 @@
+{
+  "key": "group_price_page_template",
+  "title": "Price Page Template",
+  "fields": [
+    {
+      "key": "field_header_logo_text",
+      "label": "Header Logo Text",
+      "name": "header_logo_text",
+      "type": "text",
+      "default_value": "Original"
+    },
+    {
+      "key": "field_page_title",
+      "label": "Page Title",
+      "name": "page_title",
+      "type": "text",
+      "default_value": "Tāmēšanas sistēma būvniecībā"
+    },
+    {
+      "key": "field_page_subtitle",
+      "label": "Page Subtitle",
+      "name": "page_subtitle",
+      "type": "textarea",
+      "default_value": "Uzņēmumiem, kas nodarbojas ar celtniecības tāmju sastādīšanu, to realizāciju, darbu izpildes uzskaiti. Piemērota arī uzņēmumiem, kuri veic ģenerāluzņēmēju funkcijas. Iespējams konfigurēt lietošanai tīklā."
+    },
+    {
+      "key": "field_header_features",
+      "label": "Header Features",
+      "name": "header_features",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_header_feature_text",
+          "label": "Feature Text",
+          "name": "feature_text",
+          "type": "text"
+        }
+      ],
+      "default_value": [
+        {
+          "feature_text": "Būvniecības tāmes, atbilstoši LBN-501"
+        },
+        {
+          "feature_text": "Datu bāzes"
+        },
+        {
+          "feature_text": "Laika grafiks"
+        },
+        {
+          "feature_text": "Nodošanas-pieņemšanas akti"
+        },
+        {
+          "feature_text": "Darbs tīklā"
+        }
+      ]
+    },
+    {
+      "key": "field_description_title",
+      "label": "Description Title",
+      "name": "description_title",
+      "type": "text",
+      "default_value": "Sistēmas apraksts"
+    },
+    {
+      "key": "field_description_content",
+      "label": "Description Content",
+      "name": "description_content",
+      "type": "wysiwyg",
+      "default_value": "<p>Būvniecības tāmēšanas sistēma ir mūsdienīga programmatūra, kas nodrošina precīzu būvprojektu izmaksu, materiālu un darba apjoma aprēķinu automatizāciju. Sistēma izstrādāta, lai ievērojami atvieglotu būvuzņēmumu ikdienas darbu, nodrošinot centralizētu datu bāzi, kas apkopo informāciju par dažādiem būvlaukuma aspektiem. Tas ļauj projektu vadītājiem un inženieriem pieņemt informētus lēmumus, optimizēt resursu izmantošanu un ievērot budžeta ierobežojumus.</p><p>Programmatūra integrē dažādus būvniecības procesa posmus, sākot no sākotnējās projekta analīzes un sagatavošanas, izmantojot precīzus mērījumus, līdz gala rezultātu kopsavilkumam. Sistēma spēj apstrādāt datus no dažādiem avotiem, piemēram, manuāli ievadītas informācijas, CAD rasējumiem un citām datubāzēm, lai nodrošinātu pilnīgu pārskatu par katra projekta ekonomisko un tehnisko stāvokli. Nodrošinot reāllaika analītiku un automatizētus aprēķinus, sistēma palīdz samazināt cilvēciskās kļūdas un paātrina lēmumu pieņemšanas procesu.</p><p>Ar vienkāršu un intuitīvu lietotāja interfeisu sistēma nodrošina lietotājiem vieglas navigācijas iespējas un skaidru informācijas pārvaldību. Pielāgojamas atskaites un grafiki ļauj uzņēmumiem novērtēt projekta progresu, salīdzināt plānotos un faktiskos izmaksu rādītājus, kā arī ātri reaģēt uz iespējamām novirzēm. Tā rezultātā būvprojektu vadītāji var koncentrēties uz kvalitatīvu projektu īstenošanu, vienlaikus mazinot administratīvās un aprēķinu kļūdu risku.</p>"
+    },
+    {
+      "key": "field_description_button",
+      "label": "Description Button",
+      "name": "description_button",
+      "type": "link",
+      "default_value": {
+        "title": "Skatīt programmas iespējas",
+        "url": "#"
+      }
+    },
+    {
+      "key": "field_pricing_title",
+      "label": "Pricing Title",
+      "name": "pricing_title",
+      "type": "text",
+      "default_value": "Cenu plāni"
+    },
+    {
+      "key": "field_pricing_plans",
+      "label": "Pricing Plans",
+      "name": "pricing_plans",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_plan_name",
+          "label": "Plan Name",
+          "name": "plan_name",
+          "type": "text"
+        },
+        {
+          "key": "field_plan_style",
+          "label": "Plan Style",
+          "name": "plan_style",
+          "type": "select",
+          "choices": {
+            "white": "White",
+            "light": "Light",
+            "dark": "Dark"
+          }
+        },
+        {
+          "key": "field_price",
+          "label": "Price",
+          "name": "price",
+          "type": "text"
+        },
+        {
+          "key": "field_price_period",
+          "label": "Price Period",
+          "name": "price_period",
+          "type": "text"
+        },
+        {
+          "key": "field_apply_button",
+          "label": "Apply Button",
+          "name": "apply_button",
+          "type": "link"
+        },
+        {
+          "key": "field_features",
+          "label": "Features",
+          "name": "features",
+          "type": "repeater",
+          "layout": "table",
+          "sub_fields": [
+            {
+              "key": "field_feature_title",
+              "label": "Feature Title",
+              "name": "feature_title",
+              "type": "text"
+            },
+            {
+              "key": "field_feature_description",
+              "label": "Feature Description",
+              "name": "feature_description",
+              "type": "textarea"
+            }
+          ]
+        },
+        {
+          "key": "field_bottom_button",
+          "label": "Bottom Button",
+          "name": "bottom_button",
+          "type": "link"
+        }
+      ],
+      "default_value": [
+        {
+          "plan_name": "Pamata versija",
+          "plan_style": "white",
+          "price": "1000.99 €",
+          "price_period": "Gada licences cena",
+          "apply_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          },
+          "features": [
+            {
+              "feature_title": "Pamata funkcionalitāte",
+              "feature_description": "Nodrošina būtiskākos rīkus būvniecības tāmēšanas procesu pārvaldībai, ieskaitot pamata datu ievadi un apstrādi."
+            },
+            {
+              "feature_title": "Intuitīva lietotāja saskarne",
+              "feature_description": "Lietotājam draudzīgs interfeiss, kas ļauj ātri un viegli apgūt sistēmas darbību."
+            },
+            {
+              "feature_title": "Vienkārša integrācija",
+              "feature_description": "Pamatfunkcionalitāte, kas viegli sasaista esošās sistēmas un datu avotus."
+            },
+            {
+              "feature_title": "Atskaišu ģenerēšana",
+              "feature_description": "Automātiska pamata atskaišu izveide, lai sekotu projektu izmaksām un progresam."
+            },
+            {
+              "feature_title": "Sākotnējais tehniskais atbalsts",
+              "feature_description": "Pamatlīmeņa palīdzība un konsultācijas lietotāju jautājumiem."
+            }
+          ],
+          "bottom_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          }
+        },
+        {
+          "plan_name": "Paplašinātā versija",
+          "plan_style": "light",
+          "price": "2000.99 €",
+          "price_period": "Gada licences cena",
+          "apply_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          },
+          "features": [
+            {
+              "feature_title": "Pamata funkcionalitāte",
+              "feature_description": "Nodrošina būtiskākos rīkus būvniecības tāmēšanas procesu pārvaldībai, ieskaitot pamata datu ievadi un apstrādi."
+            },
+            {
+              "feature_title": "Intuitīva lietotāja saskarne",
+              "feature_description": "Lietotājam draudzīgs interfeiss, kas ļauj ātri un viegli apgūt sistēmas darbību."
+            },
+            {
+              "feature_title": "Vienkārša integrācija",
+              "feature_description": "Pamatfunkcionalitāte, kas viegli sasaista esošās sistēmas un datu avotus."
+            },
+            {
+              "feature_title": "Atskaišu ģenerēšana",
+              "feature_description": "Automātiska pamata atskaišu izveide, lai sekotu projektu izmaksām un progresam."
+            },
+            {
+              "feature_title": "Sākotnējais tehniskais atbalsts",
+              "feature_description": "Pamatlīmeņa palīdzība un konsultācijas lietotāju jautājumiem."
+            }
+          ],
+          "bottom_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          }
+        },
+        {
+          "plan_name": "Pielāgota versija biznesa specifikai",
+          "plan_style": "dark",
+          "price": "-- €",
+          "price_period": "Gada licences cena",
+          "apply_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          },
+          "features": [
+            {
+              "feature_title": "Pamata funkcionalitāte",
+              "feature_description": "Nodrošina būtiskākos rīkus būvniecības tāmēšanas procesu pārvaldībai, ieskaitot pamata datu ievadi un apstrādi."
+            },
+            {
+              "feature_title": "Intuitīva lietotāja saskarne",
+              "feature_description": "Lietotājam draudzīgs interfeiss, kas ļauj ātri un viegli apgūt sistēmas darbību."
+            },
+            {
+              "feature_title": "Vienkārša integrācija",
+              "feature_description": "Pamatfunkcionalitāte, kas viegli sasaista esošās sistēmas un datu avotus."
+            },
+            {
+              "feature_title": "Atskaišu ģenerēšana",
+              "feature_description": "Automātiska pamata atskaišu izveide, lai sekotu projektu izmaksām un progresam."
+            },
+            {
+              "feature_title": "Sākotnējais tehniskais atbalsts",
+              "feature_description": "Pamatlīmeņa palīdzība un konsultācijas lietotāju jautājumiem."
+            }
+          ],
+          "bottom_button": {
+            "title": "Pieteikties",
+            "url": "#"
+          }
+        }
+      ]
+    },
+    {
+      "key": "field_features_title",
+      "label": "Features Title",
+      "name": "features_title",
+      "type": "text",
+      "default_value": "Programmas iespējas"
+    },
+    {
+      "key": "field_features_subtitle",
+      "label": "Features Subtitle",
+      "name": "features_subtitle",
+      "type": "textarea",
+      "default_value": "Mūsu sistēma ir izstrādāta, lai pilnībā atbalstītu jūsu ikdienas darbības, nodrošinot visaptverošu un efektīvu funkciju klāstu. Zemāk redzams funkciju saraksts, kurā atradīsiet rīkus, kas palīdzēs automatizēt procesus, precīzi analizēt datus un pieņemt informētus lēmumus. Katra funkcija ir rūpīgi izstrādāta, lai nodrošinātu maksimālu efektivitāti un vienkāršotu darba plūsmu - tādējādi jūs varēsiet koncentrēties uz būtiskāko savā uzņēmējdarbībā."
+    },
+    {
+      "key": "field_program_features",
+      "label": "Program Features",
+      "name": "program_features",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_feature_icon",
+          "label": "Feature Icon",
+          "name": "feature_icon",
+          "type": "image",
+          "return_format": "array"
+        },
+        {
+          "key": "field_feature_name",
+          "label": "Feature Name",
+          "name": "feature_name",
+          "type": "text"
+        },
+        {
+          "key": "field_feature_description",
+          "label": "Feature Description",
+          "name": "feature_description",
+          "type": "textarea"
+        }
+      ],
+      "default_value": [
+        {
+          "feature_name": "Būvniecības tāmes, atbilstoši LBN-501",
+          "feature_description": "Iespēja sagatavot daudzveidīgas izdrukas atbilstoši nepieciešamajai detalizācijas pakāpei."
+        },
+        {
+          "feature_name": "Datu bāzes",
+          "feature_description": "Iebūvēta normatīvu un veikalu cenu datu bāze, pieslēdzams \"Elektroniskais Būvdarbu izcenojumu katalogs\". Iespēja veidot uzņēmuma iekšējās datu bāzes."
+        },
+        {
+          "feature_name": "Laika grafiks",
+          "feature_description": "Automātiska laika grafika sastādīšana, finanšu plūmas automātiska izveide."
+        },
+        {
+          "feature_name": "Nodošanas-pieņemšanas akti",
+          "feature_description": "Sistēma ļauj uzskaitīt darītos darbus procentuāli vai pēc apjoma, kā arī sastādīt nodošanas-pieņemšanas aktus."
+        },
+        {
+          "feature_name": "Darbs tīklā",
+          "feature_description": "Iespējas darbs dudzlietotāju režīmā, izmantojot kopēju datu bāzi."
+        },
+        {
+          "feature_name": "Finanšu vadība",
+          "feature_description": "Iespeja uzkaitīt faktiski izlietotos materiālus un patērētās darba stundas."
+        },
+        {
+          "feature_name": "Daudzvalodu režīms",
+          "feature_description": "Iespēja darbus un materiālus nosaukumus norādīt latviešu, angļu, vācu, krievu u.c. valodās un sagatavot atbilstošas izdrukas."
+        },
+        {
+          "feature_name": "Datu imports, eksports",
+          "feature_description": "Visus datus iespējams eksportēt uz Microsoft Excel, kā arī veikt apakšuzņēmēju tāmju un pasūtītāju doto apjomu importu no Excel failiem."
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-price-page.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for Price Page Template"
+}

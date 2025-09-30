@@ -1,0 +1,66 @@
+[
+  {
+    "key": "group_product_fields",
+    "title": "Product Fields",
+    "fields": [
+      {
+        "key": "field_product_subtitle",
+        "label": "Product Subtitle",
+        "name": "product_subtitle",
+        "type": "text",
+        "instructions": "Short description shown under the product title"
+      },
+      {
+        "key": "field_product_header_background",
+        "label": "Product Header Background",
+        "name": "product_header_background",
+        "type": "image",
+        "return_format": "url",
+        "preview_size": "medium",
+        "library": "all",
+        "instructions": "Background image for the product header section"
+      },
+
+      {
+        "key": "field_product_integration_tab",
+        "label": "Product Integration Tab",
+        "name": "product_integration_tab",
+        "type": "wysiwyg",
+        "instructions": "Content for the 'Integrācija' tab"
+      },
+      {
+        "key": "field_product_benefits_tab",
+        "label": "Product Benefits Tab",
+        "name": "product_benefits_tab",
+        "type": "wysiwyg",
+        "instructions": "Content for the 'Ieguvumi' tab"
+      },
+
+      {
+        "key": "field_product_price_period",
+        "label": "Price Period",
+        "name": "product_price_period",
+        "type": "text",
+        "instructions": "Price period (e.g., 'Mēneša abonements')",
+        "default_value": "Mēneša abonements"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "product"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Custom fields for product modules"
+  }
+]

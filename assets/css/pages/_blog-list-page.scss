@@ -1,0 +1,33 @@
+.blog-list-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 40px;
+    padding: 65px 0 60px 0;
+
+    @media screen {
+        @media (max-width: 1199px) {
+            flex-direction: column;
+            gap: 50px 0;
+
+            .content-sidebar {
+                .widget.categories {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            padding: 50px 0;
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+
+        @media screen {
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
+        }
+    }
+}

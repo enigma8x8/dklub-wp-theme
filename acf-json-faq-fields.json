@@ -1,0 +1,83 @@
+{
+  "key": "group_faq_fields",
+  "title": "FAQ Fields",
+  "fields": [
+    {
+      "key": "field_faq_question",
+      "label": "FAQ Question",
+      "name": "faq_question",
+      "type": "text",
+      "instructions": "The question text (if empty, will use post title)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_faq_answer",
+      "label": "FAQ Answer",
+      "name": "faq_answer",
+      "type": "wysiwyg",
+      "instructions": "The answer text (if empty, will use post content)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 1,
+      "delay": 0
+    },
+    {
+      "key": "field_faq_category",
+      "label": "FAQ Category",
+      "name": "faq_category",
+      "type": "taxonomy",
+      "instructions": "Select the FAQ category for this item",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "taxonomy": "faq_category_tax",
+      "field_type": "select",
+      "allow_null": 1,
+      "add_term": 0,
+      "save_terms": 1,
+      "load_terms": 1,
+      "return_format": "object",
+      "multiple": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "faq_item"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for FAQ items"
+}

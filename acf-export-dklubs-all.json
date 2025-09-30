@@ -1,0 +1,1083 @@
+[
+  {
+    "key": "group_homepage",
+    "title": "Homepage",
+    "fields": [
+      {
+        "key": "field_hero_title",
+        "label": "Hero Title",
+        "name": "hero_title",
+        "type": "text"
+      },
+      {
+        "key": "field_hero_subtitle",
+        "label": "Hero Subtitle",
+        "name": "hero_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_hero_cta_1_text",
+        "label": "Hero CTA 1 Text",
+        "name": "hero_cta_1_text",
+        "type": "text"
+      },
+      {
+        "key": "field_hero_cta_1_link",
+        "label": "Hero CTA 1 Link",
+        "name": "hero_cta_1_link",
+        "type": "url"
+      },
+      {
+        "key": "field_hero_cta_2_text",
+        "label": "Hero CTA 2 Text",
+        "name": "hero_cta_2_text",
+        "type": "text"
+      },
+      {
+        "key": "field_hero_cta_2_link",
+        "label": "Hero CTA 2 Link",
+        "name": "hero_cta_2_link",
+        "type": "url"
+      },
+      {
+        "key": "field_hero_features",
+        "label": "Hero Features",
+        "name": "hero_features",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_hero_feature",
+            "label": "Feature",
+            "name": "feature",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "key": "field_hero_video",
+        "label": "Hero Video",
+        "name": "hero_video",
+        "type": "url"
+      },
+      {
+        "key": "field_hero_video_label",
+        "label": "Hero Video Label",
+        "name": "hero_video_label",
+        "type": "text"
+      },
+      {
+        "key": "field_hero_logos",
+        "label": "Hero Logos",
+        "name": "hero_logos",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_hero_logo",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "return_format": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_modules_section_title",
+        "label": "Modules Section Title",
+        "name": "modules_section_title",
+        "type": "text"
+      },
+      {
+        "key": "field_modules_section_subtitle",
+        "label": "Modules Section Subtitle",
+        "name": "modules_section_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_modules_section_cta_text",
+        "label": "Modules Section CTA Text",
+        "name": "modules_section_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_modules_section_cta_link",
+        "label": "Modules Section CTA Link",
+        "name": "modules_section_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_modules_list",
+        "label": "Modules List",
+        "name": "modules_list",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_module_type",
+            "label": "Type",
+            "name": "type",
+            "type": "text"
+          },
+          {
+            "key": "field_module_icon",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "return_format": "url"
+          },
+          {
+            "key": "field_module_name",
+            "label": "Name",
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "key": "field_module_link",
+            "label": "Link",
+            "name": "link",
+            "type": "url"
+          },
+          {
+            "key": "field_module_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_module_price",
+            "label": "Price",
+            "name": "price",
+            "type": "text"
+          },
+          {
+            "key": "field_module_price_note",
+            "label": "Price Note",
+            "name": "price_note",
+            "type": "text"
+          },
+          {
+            "key": "field_module_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text"
+          },
+          {
+            "key": "field_module_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_custom_modules_section_title",
+        "label": "Custom Modules Section Title",
+        "name": "custom_modules_section_title",
+        "type": "text"
+      },
+      {
+        "key": "field_custom_modules_section_subtitle",
+        "label": "Custom Modules Section Subtitle",
+        "name": "custom_modules_section_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_custom_modules_section_cta_text",
+        "label": "Custom Modules Section CTA Text",
+        "name": "custom_modules_section_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_custom_modules_section_cta_link",
+        "label": "Custom Modules Section CTA Link",
+        "name": "custom_modules_section_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_custom_modules_list",
+        "label": "Custom Modules List",
+        "name": "custom_modules_list",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_custom_module_type",
+            "label": "Type",
+            "name": "type",
+            "type": "text"
+          },
+          {
+            "key": "field_custom_module_icon",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "return_format": "url"
+          },
+          {
+            "key": "field_custom_module_name",
+            "label": "Name",
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "key": "field_custom_module_link",
+            "label": "Link",
+            "name": "link",
+            "type": "url"
+          },
+          {
+            "key": "field_custom_module_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_custom_module_price",
+            "label": "Price",
+            "name": "price",
+            "type": "text"
+          },
+          {
+            "key": "field_custom_module_price_note",
+            "label": "Price Note",
+            "name": "price_note",
+            "type": "text"
+          },
+          {
+            "key": "field_custom_module_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text"
+          },
+          {
+            "key": "field_custom_module_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      },
+      {
+        "key": "field_consultation_title",
+        "label": "Consultation Title",
+        "name": "consultation_title",
+        "type": "text"
+      },
+      {
+        "key": "field_consultation_text",
+        "label": "Consultation Text",
+        "name": "consultation_text",
+        "type": "textarea"
+      },
+      {
+        "key": "field_consultation_cta_1_text",
+        "label": "Consultation CTA 1 Text",
+        "name": "consultation_cta_1_text",
+        "type": "text"
+      },
+      {
+        "key": "field_consultation_cta_1_link",
+        "label": "Consultation CTA 1 Link",
+        "name": "consultation_cta_1_link",
+        "type": "url"
+      },
+      {
+        "key": "field_consultation_cta_2_text",
+        "label": "Consultation CTA 2 Text",
+        "name": "consultation_cta_2_text",
+        "type": "text"
+      },
+      {
+        "key": "field_consultation_cta_2_link",
+        "label": "Consultation CTA 2 Link",
+        "name": "consultation_cta_2_link",
+        "type": "url"
+      },
+      {
+        "key": "field_consultation_features",
+        "label": "Consultation Features",
+        "name": "consultation_features",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_consultation_feature",
+            "label": "Feature",
+            "name": "feature",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "key": "field_consultation_video",
+        "label": "Consultation Video",
+        "name": "consultation_video",
+        "type": "url"
+      },
+      {
+        "key": "field_latest_posts_title",
+        "label": "Latest Posts Title",
+        "name": "latest_posts_title",
+        "type": "text"
+      },
+      {
+        "key": "field_latest_posts_subtitle",
+        "label": "Latest Posts Subtitle",
+        "name": "latest_posts_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_latest_posts_cta_text",
+        "label": "Latest Posts CTA Text",
+        "name": "latest_posts_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_latest_posts_cta_link",
+        "label": "Latest Posts CTA Link",
+        "name": "latest_posts_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_faq_title",
+        "label": "FAQ Title",
+        "name": "faq_title",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_subtitle",
+        "label": "FAQ Subtitle",
+        "name": "faq_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_items",
+        "label": "FAQ Items",
+        "name": "faq_items",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_faq_question",
+            "label": "Question",
+            "name": "question",
+            "type": "text"
+          },
+          {
+            "key": "field_faq_answer",
+            "label": "Answer",
+            "name": "answer",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "key": "field_faq_cta_text",
+        "label": "FAQ CTA Text",
+        "name": "faq_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_cta_link",
+        "label": "FAQ CTA Link",
+        "name": "faq_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_form_action",
+        "label": "Form Action",
+        "name": "form_action",
+        "type": "url"
+      },
+      {
+        "key": "field_form_title",
+        "label": "Form Title",
+        "name": "form_title",
+        "type": "text"
+      },
+      {
+        "key": "field_form_subtitle",
+        "label": "Form Subtitle",
+        "name": "form_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_first_name",
+        "label": "Form Label First Name",
+        "name": "form_label_first_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_first_name",
+        "label": "Form Placeholder First Name",
+        "name": "form_placeholder_first_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_last_name",
+        "label": "Form Label Last Name",
+        "name": "form_label_last_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_last_name",
+        "label": "Form Placeholder Last Name",
+        "name": "form_placeholder_last_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_company",
+        "label": "Form Label Company",
+        "name": "form_label_company",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_company",
+        "label": "Form Placeholder Company",
+        "name": "form_placeholder_company",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_email",
+        "label": "Form Label Email",
+        "name": "form_label_email",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_email",
+        "label": "Form Placeholder Email",
+        "name": "form_placeholder_email",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_phone",
+        "label": "Form Label Phone",
+        "name": "form_label_phone",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_phone",
+        "label": "Form Placeholder Phone",
+        "name": "form_placeholder_phone",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_privacy",
+        "label": "Form Label Privacy",
+        "name": "form_label_privacy",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_newsletter",
+        "label": "Form Label Newsletter",
+        "name": "form_label_newsletter",
+        "type": "text"
+      },
+      {
+        "key": "field_form_submit_text",
+        "label": "Form Submit Text",
+        "name": "form_submit_text",
+        "type": "text"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "front-page.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_modules_page",
+    "title": "Modules Page",
+    "fields": [
+      {
+        "key": "field_modules_page_title",
+        "label": "Modules Page Title",
+        "name": "modules_page_title",
+        "type": "text"
+      },
+      {
+        "key": "field_modules_page_subtitle",
+        "label": "Modules Page Subtitle",
+        "name": "modules_page_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_modules_page_list",
+        "label": "Modules Page List",
+        "name": "modules_page_list",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_modules_page_type",
+            "label": "Type",
+            "name": "type",
+            "type": "text"
+          },
+          {
+            "key": "field_modules_page_icon",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "return_format": "url"
+          },
+          {
+            "key": "field_modules_page_name",
+            "label": "Name",
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "key": "field_modules_page_link",
+            "label": "Link",
+            "name": "link",
+            "type": "url"
+          },
+          {
+            "key": "field_modules_page_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_modules_page_price",
+            "label": "Price",
+            "name": "price",
+            "type": "text"
+          },
+          {
+            "key": "field_modules_page_price_note",
+            "label": "Price Note",
+            "name": "price_note",
+            "type": "text"
+          },
+          {
+            "key": "field_modules_page_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text"
+          },
+          {
+            "key": "field_modules_page_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-modules.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_extra_modules_page",
+    "title": "Extra Modules Page",
+    "fields": [
+      {
+        "key": "field_extra_modules_page_title",
+        "label": "Extra Modules Page Title",
+        "name": "extra_modules_page_title",
+        "type": "text"
+      },
+      {
+        "key": "field_extra_modules_page_subtitle",
+        "label": "Extra Modules Page Subtitle",
+        "name": "extra_modules_page_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_extra_modules_page_list",
+        "label": "Extra Modules Page List",
+        "name": "extra_modules_page_list",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_extra_modules_page_type",
+            "label": "Type",
+            "name": "type",
+            "type": "text"
+          },
+          {
+            "key": "field_extra_modules_page_icon",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "return_format": "url"
+          },
+          {
+            "key": "field_extra_modules_page_name",
+            "label": "Name",
+            "name": "name",
+            "type": "text"
+          },
+          {
+            "key": "field_extra_modules_page_link",
+            "label": "Link",
+            "name": "link",
+            "type": "url"
+          },
+          {
+            "key": "field_extra_modules_page_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea"
+          },
+          {
+            "key": "field_extra_modules_page_price",
+            "label": "Price",
+            "name": "price",
+            "type": "text"
+          },
+          {
+            "key": "field_extra_modules_page_price_note",
+            "label": "Price Note",
+            "name": "price_note",
+            "type": "text"
+          },
+          {
+            "key": "field_extra_modules_page_cta_text",
+            "label": "CTA Text",
+            "name": "cta_text",
+            "type": "text"
+          },
+          {
+            "key": "field_extra_modules_page_cta_link",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "url"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-extra-modules.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_single_module_page",
+    "title": "Single Module Page",
+    "fields": [
+      {
+        "key": "field_single_module_title",
+        "label": "Single Module Title",
+        "name": "single_module_title",
+        "type": "text"
+      },
+      {
+        "key": "field_single_module_subtitle",
+        "label": "Single Module Subtitle",
+        "name": "single_module_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_single_module_details",
+        "label": "Single Module Details",
+        "name": "single_module_details",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_single_module_detail_title",
+            "label": "Detail Title",
+            "name": "detail_title",
+            "type": "text"
+          },
+          {
+            "key": "field_single_module_detail_content",
+            "label": "Detail Content",
+            "name": "detail_content",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "key": "field_single_module_price",
+        "label": "Single Module Price",
+        "name": "single_module_price",
+        "type": "text"
+      },
+      {
+        "key": "field_single_module_price_note",
+        "label": "Single Module Price Note",
+        "name": "single_module_price_note",
+        "type": "text"
+      },
+      {
+        "key": "field_single_module_cta_text",
+        "label": "Single Module CTA Text",
+        "name": "single_module_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_single_module_cta_link",
+        "label": "Single Module CTA Link",
+        "name": "single_module_cta_link",
+        "type": "url"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-single-module.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_price_page",
+    "title": "Price Page",
+    "fields": [
+      {
+        "key": "field_price_page_title",
+        "label": "Price Page Title",
+        "name": "price_page_title",
+        "type": "text"
+      },
+      {
+        "key": "field_price_page_subtitle",
+        "label": "Price Page Subtitle",
+        "name": "price_page_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_price_items",
+        "label": "Price Items",
+        "name": "price_items",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_price_item_title",
+            "label": "Item Title",
+            "name": "item_title",
+            "type": "text"
+          },
+          {
+            "key": "field_price_item_price",
+            "label": "Item Price",
+            "name": "item_price",
+            "type": "text"
+          },
+          {
+            "key": "field_price_item_description",
+            "label": "Item Description",
+            "name": "item_description",
+            "type": "textarea"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-price.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_contact_page",
+    "title": "Contact Page",
+    "fields": [
+      {
+        "key": "field_contact_page_title",
+        "label": "Contact Page Title",
+        "name": "contact_page_title",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_page_subtitle",
+        "label": "Contact Page Subtitle",
+        "name": "contact_page_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_email_label",
+        "label": "Contact Email Label",
+        "name": "contact_email_label",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_email",
+        "label": "Contact Email",
+        "name": "contact_email",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_phone_label",
+        "label": "Contact Phone Label",
+        "name": "contact_phone_label",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_phone",
+        "label": "Contact Phone",
+        "name": "contact_phone",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_address_label",
+        "label": "Contact Address Label",
+        "name": "contact_address_label",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_address",
+        "label": "Contact Address",
+        "name": "contact_address",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_action",
+        "label": "Contact Form Action",
+        "name": "contact_form_action",
+        "type": "url"
+      },
+      {
+        "key": "field_contact_form_title",
+        "label": "Contact Form Title",
+        "name": "contact_form_title",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_subtitle",
+        "label": "Contact Form Subtitle",
+        "name": "contact_form_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_label_name",
+        "label": "Contact Form Label Name",
+        "name": "contact_form_label_name",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_placeholder_name",
+        "label": "Contact Form Placeholder Name",
+        "name": "contact_form_placeholder_name",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_label_email",
+        "label": "Contact Form Label Email",
+        "name": "contact_form_label_email",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_placeholder_email",
+        "label": "Contact Form Placeholder Email",
+        "name": "contact_form_placeholder_email",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_label_message",
+        "label": "Contact Form Label Message",
+        "name": "contact_form_label_message",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_placeholder_message",
+        "label": "Contact Form Placeholder Message",
+        "name": "contact_form_placeholder_message",
+        "type": "text"
+      },
+      {
+        "key": "field_contact_form_submit_text",
+        "label": "Contact Form Submit Text",
+        "name": "contact_form_submit_text",
+        "type": "text"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "page-contact.php"
+        }
+      ]
+    ]
+  },
+  {
+    "key": "group_faq_page",
+    "title": "FAQ Page",
+    "fields": [
+      {
+        "key": "field_faq_title",
+        "label": "FAQ Title",
+        "name": "faq_title",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_subtitle",
+        "label": "FAQ Subtitle",
+        "name": "faq_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_items",
+        "label": "FAQ Items",
+        "name": "faq_items",
+        "type": "repeater",
+        "sub_fields": [
+          {
+            "key": "field_faq_question",
+            "label": "Question",
+            "name": "question",
+            "type": "text"
+          },
+          {
+            "key": "field_faq_answer",
+            "label": "Answer",
+            "name": "answer",
+            "type": "textarea"
+          }
+        ]
+      },
+      {
+        "key": "field_faq_cta_text",
+        "label": "FAQ CTA Text",
+        "name": "faq_cta_text",
+        "type": "text"
+      },
+      {
+        "key": "field_faq_cta_link",
+        "label": "FAQ CTA Link",
+        "name": "faq_cta_link",
+        "type": "url"
+      },
+      {
+        "key": "field_form_action",
+        "label": "Form Action",
+        "name": "form_action",
+        "type": "url"
+      },
+      {
+        "key": "field_form_title",
+        "label": "Form Title",
+        "name": "form_title",
+        "type": "text"
+      },
+      {
+        "key": "field_form_subtitle",
+        "label": "Form Subtitle",
+        "name": "form_subtitle",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_first_name",
+        "label": "Form Label First Name",
+        "name": "form_label_first_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_first_name",
+        "label": "Form Placeholder First Name",
+        "name": "form_placeholder_first_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_last_name",
+        "label": "Form Label Last Name",
+        "name": "form_label_last_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_last_name",
+        "label": "Form Placeholder Last Name",
+        "name": "form_placeholder_last_name",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_company",
+        "label": "Form Label Company",
+        "name": "form_label_company",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_company",
+        "label": "Form Placeholder Company",
+        "name": "form_placeholder_company",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_email",
+        "label": "Form Label Email",
+        "name": "form_label_email",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_email",
+        "label": "Form Placeholder Email",
+        "name": "form_placeholder_email",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_phone",
+        "label": "Form Label Phone",
+        "name": "form_label_phone",
+        "type": "text"
+      },
+      {
+        "key": "field_form_placeholder_phone",
+        "label": "Form Placeholder Phone",
+        "name": "form_placeholder_phone",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_privacy",
+        "label": "Form Label Privacy",
+        "name": "form_label_privacy",
+        "type": "text"
+      },
+      {
+        "key": "field_form_label_newsletter",
+        "label": "Form Label Newsletter",
+        "name": "form_label_newsletter",
+        "type": "text"
+      },
+      {
+        "key": "field_form_submit_text",
+        "label": "Form Submit Text",
+        "name": "form_submit_text",
+        "type": "text"
+      }
+    ],
+    "location": [
+      [{ "param": "page_template", "operator": "==", "value": "page-faq.php" }]
+    ]
+  },
+  {
+    "key": "group_blog_list",
+    "title": "Blog List",
+    "fields": [
+      {
+        "key": "field_blog_list_title",
+        "label": "Blog List Title",
+        "name": "blog_list_title",
+        "type": "text"
+      },
+      {
+        "key": "field_blog_list_subtitle",
+        "label": "Blog List Subtitle",
+        "name": "blog_list_subtitle",
+        "type": "text"
+      }
+    ],
+    "location": [[{ "param": "post_type", "operator": "==", "value": "post" }]]
+  }
+]

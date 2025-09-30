@@ -1,0 +1,182 @@
+{
+  "key": "group_faq_page",
+  "title": "FAQ Page",
+  "fields": [
+    {
+      "key": "field_faq_hero_bg_image",
+      "label": "Hero Background Image",
+      "name": "hero_bg_image",
+      "type": "image",
+      "instructions": "Upload background image for the hero section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_faq_page_title",
+      "label": "Page Title",
+      "name": "page_title",
+      "type": "text",
+      "instructions": "Main title for the FAQ page",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Biežāk uzdotie jautājumi",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_faq_page_subtitle",
+      "label": "Page Subtitle",
+      "name": "page_subtitle",
+      "type": "textarea",
+      "instructions": "Subtitle text for the FAQ page",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Šajā sadaļā atradīsiet vērtīgu informāciju un iedvesmojošus pieredzes stāstus, kas palīdzēs jums labāk izprast mūsu produktus un to lietojumu.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    },
+    {
+      "key": "field_faq_sidebar_categories_title",
+      "label": "Sidebar Categories Title",
+      "name": "sidebar_categories_title",
+      "type": "text",
+      "instructions": "Title for the categories widget in sidebar",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Visas kategorijas",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_faq_sidebar_posts_title",
+      "label": "Sidebar Posts Title",
+      "name": "sidebar_posts_title",
+      "type": "text",
+      "instructions": "Title for the posts widget in sidebar",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Ieskaties padomu sadaļā",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_faq_sidebar_posts",
+      "label": "Sidebar Posts",
+      "name": "sidebar_posts",
+      "type": "relationship",
+      "instructions": "Select posts to display in the sidebar slider",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "post_type": ["post"],
+      "taxonomy": "",
+      "filters": ["search", "post_type", "taxonomy"],
+      "elements": ["featured_image"],
+      "min": "",
+      "max": "",
+      "return_format": "object"
+    },
+    {
+      "key": "field_faq_form_title",
+      "label": "Form Title",
+      "name": "faq_form_title",
+      "type": "text",
+      "instructions": "Title for the consultation form",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Piesakieties konsultācijai",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_faq_form_description",
+      "label": "Form Description",
+      "name": "faq_form_description",
+      "type": "textarea",
+      "instructions": "Description text for the consultation form",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Atstājiet savu kontaktinformāciju un mūsu speciālists ar Jums sazināsies, lai precizētu nianses par uzņēmuma procesiem un kā varam tos uzlabot.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-faq.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for the FAQ page template"
+}

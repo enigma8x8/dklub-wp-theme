@@ -1,0 +1,316 @@
+{
+  "key": "group_blog_list_page",
+  "title": "Blog List Page",
+  "fields": [
+    {
+      "key": "field_blog_list_hero_bg_image",
+      "label": "Hero Background Image",
+      "name": "hero_bg_image",
+      "type": "image",
+      "instructions": "Upload background image for the hero section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_blog_list_page_title",
+      "label": "Page Title",
+      "name": "page_title",
+      "type": "text",
+      "instructions": "Main title for the blog list page",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Raksti un pieredze",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_blog_list_page_subtitle",
+      "label": "Page Subtitle",
+      "name": "page_subtitle",
+      "type": "textarea",
+      "instructions": "Subtitle text for the blog list page",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Šajā sadaļā atradīsiet vērtīgu informāciju un iedvesmojošus pieredzes stāstus, kas palīdzēs jums labāk izprast mūsu produktus un to lietojumu.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    },
+    {
+      "key": "field_blog_list_sidebar_categories_title",
+      "label": "Sidebar Categories Title",
+      "name": "sidebar_categories_title",
+      "type": "text",
+      "instructions": "Title for the categories widget in sidebar",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Rakstu kategorijas",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_blog_list_sidebar_categories",
+      "label": "Sidebar Categories",
+      "name": "sidebar_categories",
+      "type": "repeater",
+      "instructions": "Add categories for the sidebar",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Category",
+      "sub_fields": [
+        {
+          "key": "field_blog_list_category_name",
+          "label": "Category Name",
+          "name": "category_name",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_blog_list_category_link",
+          "label": "Category Link",
+          "name": "category_link",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": ""
+        },
+        {
+          "key": "field_blog_list_is_current",
+          "label": "Is Current Category",
+          "name": "is_current",
+          "type": "true_false",
+          "instructions": "Mark if this is the current active category",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "message": "",
+          "default_value": 0,
+          "ui": 1,
+          "ui_on_text": "",
+          "ui_off_text": ""
+        }
+      ]
+    },
+    {
+      "key": "field_blog_list_sidebar_banner",
+      "label": "Sidebar Banner",
+      "name": "sidebar_banner",
+      "type": "group",
+      "instructions": "Configure the sidebar banner",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_blog_list_banner_bg_image",
+          "label": "Background Image",
+          "name": "background_image",
+          "type": "image",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_blog_list_banner_logo",
+          "label": "Logo",
+          "name": "logo",
+          "type": "image",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_blog_list_banner_logo_text",
+          "label": "Logo Text",
+          "name": "logo_text",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Integrācija ar Shopify",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_blog_list_banner_title",
+          "label": "Banner Title",
+          "name": "title",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Reklāmas baneris ar tekstu",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_blog_list_banner_button_text",
+          "label": "Button Text",
+          "name": "button_text",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Reklāmas baneris",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_blog_list_banner_button_label",
+          "label": "Button Label",
+          "name": "button_label",
+          "type": "link",
+          "instructions": "Button with text and link",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-blog-list.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for the blog list page template"
+}

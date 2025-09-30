@@ -1,0 +1,88 @@
+{
+  "key": "group_post_fields",
+  "title": "Post Fields",
+  "fields": [
+    {
+      "key": "field_post_category_color",
+      "label": "Category Color",
+      "name": "category_color",
+      "type": "select",
+      "instructions": "Choose the color for the category sticker",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "bg-orange": "Orange",
+        "bg-green": "Green",
+        "bg-light-green": "Light Green",
+        "bg-blue": "Blue"
+      },
+      "default_value": "bg-orange",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 0,
+      "return_format": "value",
+      "ajax": 0,
+      "placeholder": ""
+    },
+    {
+      "key": "field_blog_list_title",
+      "label": "Blog List Title",
+      "name": "blog_list_title",
+      "type": "text",
+      "instructions": "Custom title for blog list display (overrides post title)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_blog_list_subtitle",
+      "label": "Blog List Subtitle",
+      "name": "blog_list_subtitle",
+      "type": "textarea",
+      "instructions": "Custom subtitle/excerpt for blog list display",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for blog posts"
+}

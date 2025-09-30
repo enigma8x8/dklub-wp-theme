@@ -1,0 +1,172 @@
+.gift-card {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+
+    .stickers {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 2;
+
+        .sticker {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+
+            img {
+                pointer-events: none;
+                user-select: none;
+            }
+
+            &.gift-sticker {
+                background-color: #C69866;
+            }
+        }
+    }
+
+    .thumbnail {
+        position: relative;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+
+        a:not(.btn) {
+            display: block;
+        }
+
+        img {
+            object-fit: fill;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .btn {
+            position: absolute;
+            left: 60px;
+            right: 60px;
+            bottom: -150%;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+            transition: all .3s ease-in-out;
+            z-index: 3;
+
+            @media screen {
+                @media (max-width: 1299px) {
+                    left: 30px;
+                    right: 30px;
+                }
+
+                @media (max-width: 991px) {
+                    left: 20px;
+                    right: 20px;
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(33, 43, 51, 0.6) 0%, rgba(37, 37, 37, 0.1) 100%);
+            background-blend-mode: multiply;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+        }
+    }
+
+    .details {
+        padding: 18px 32px 25px 32px; 
+        text-align: center;
+
+        @media screen {
+            @media (max-width: 768px) {
+                padding: 18px 20px 25px 20px;
+            }
+        }
+
+        .title {
+            margin: 0 0 16px 0;
+            line-height: 30px;
+            font-size: 18px;
+
+            @media screen {
+                @media (max-width: 991px) {
+                    line-height: normal;
+                }
+            }
+
+            a {
+                color: #000;
+
+                &:hover {
+                    color: #C69866;
+                }
+            }
+        }
+
+        .product-price {
+            color: #C69866;
+
+            .price {
+                display: block;
+                font-weight: 700;            
+                font-size: 20px;
+
+                @media screen {
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+                
+                strong {
+                    color: #000;
+                }
+            }
+
+            span {
+                &:not(.price) {
+                    display: block;
+                    line-height: 15px;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+        .thumbnail {
+            .btn {
+                bottom: 138px;
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+
+                @media screen {
+                    @media (max-width: 768px) {
+                        bottom: 50px;
+                    }
+                }
+            }
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

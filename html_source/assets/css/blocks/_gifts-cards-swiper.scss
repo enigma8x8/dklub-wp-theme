@@ -1,0 +1,19 @@
+.gifts-cards-swiper {
+    .swiper-holder {
+        padding-bottom: 31px;
+
+        .swiper {
+            @media screen {
+                @media (min-width: 992px) {
+                    width: calc(100% + 40px);
+                    margin-left: -20px;
+                    padding: 20px;                    
+                }
+            }
+        }
+
+        .swiper-nav {
+            top: -28px;
+        }
+    }
+}

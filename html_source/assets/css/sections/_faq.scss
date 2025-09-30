@@ -1,0 +1,114 @@
+.faq {
+  padding: 85px 0 82px;
+  background-color: #f2f6f5;
+
+  @media (max-width: 768px) { padding: 50px 0; }
+
+  .container{
+    display:flex; align-items:flex-start; gap:135px;
+    @media (max-width:1499px){ gap:0 90px; }
+    @media (max-width:1199px){ flex-direction:column; gap:60px 0; }
+  }
+
+  .section-heading-holder{
+    margin:0 0 33px; gap:0;
+    @media (max-width:768px){ margin:0 0 20px; }
+    >div{ max-width:100%; }
+  }
+
+  .accordion-container{
+    flex-grow:1;
+    .accordion{ margin-bottom:52px; @media (max-width:1199px){ margin-bottom:20px; } }
+    .btn.btn-white{
+      background:transparent;
+      &:hover{ background:#206D69; }
+      @media (max-width:768px){ width:100%; }
+    }
+  }
+
+  .form-container{
+    flex-shrink:0; flex-basis:43.47%;
+    padding:44px 65px 65px; border-radius:5px;
+    box-shadow:0 3px 20px rgba(22,28,27,.1);
+    @media (max-width:1499px){ padding:45px; }
+    @media (max-width:575px){  padding:30px; }
+
+    /* ===== Gravity Forms ===== */
+    .gform-theme--foundation .gform_fields {row-gap: 30px !important; grid-row-gap: 30px !important;}
+    .row > * {padding-right: 20px;}
+    .gform_wrapper{
+      --accent:#90E0DC; --onGreen:#fff; --text:#292929;
+
+      /* лейблы */
+      .gfield_label, .gform-field-label{ color:var(--onGreen); display:inline-block;  }
+
+      /* прячем стандартную звёздочку */
+      .gfield_required{ display:none; }
+
+      /* квадратик у обязательных полей */
+      .gfield--required > .gfield_label,
+      .gfield_contains_required > .gfield_label,
+      .gfield--required > .gform-field-label,
+      .gfield_contains_required > .gform-field-label{
+        position:relative; padding-right:12px; line-height:1;margin-bottom: 10px !important; font-size: 15px !important; font-weight: 600;
+      }
+      .gfield--required > .gfield_label::after,
+      .gfield_contains_required > .gfield_label::after,
+      .gfield--required > .gform-field-label::after,
+      .gfield_contains_required > .gform-field-label::after{
+        content:""; position:absolute; top:0; right:0; width:5px; height:5px; background:var(--accent); 
+      }
+
+      /* поля ввода */
+      input[type="text"], input[type="email"], input[type="tel"], input[type="number"],
+      input[type="url"], input[type="password"], textarea, select{
+        background:#fff; color:var(--text);
+        border:1px solid var(--accent); border-radius:5px;
+        height: 51px !important; width: 100% !important; padding: 15px !important; margin-bottom: 2px !important; margin-right: 20px !important;
+        
+        &::placeholder{ color:var(--accent); }
+        &:focus{ outline:none; box-shadow:none; border-color:darken(#90E0DC,10%); }
+      }
+
+      /* чекбоксы/радио и их подписи */
+      .gfield_checkbox input[type="checkbox"], .gfield_radio input[type="radio"]{
+        width: 25px; height: 25px; border: 1px solid white; border-radius: 5px; background:white; 
+      }
+      .gfield_checkbox label, .gfield_consent_label, .gfield_description.consent_description{
+        color:var(--accent); padding-left: 15px;
+        a{ color:var(--accent); text-decoration:underline;}
+        a:hover{ color:var(--onGreen); text-decoration:none; }
+      }
+      .gfield_checkbox input[type="checkbox"]:checked{
+        background:#fff url('../images/checked-icon.svg') center/auto no-repeat;
+      }
+
+      /* футер и кнопка */
+      .gform_footer, .gform_page_footer{
+        padding-top:7px;
+        .gfield{ margin-bottom:13px; }
+        input[type="submit"], button[type="submit"]{
+          margin-top:35px; background-color:white !important; color: var(--text) !important; height: 51px !important; padding: 0 25px !important; font-weight: 700 !important;
+          &:hover{ background:white !important; }
+          &:focus{ background:darken(#eee,10%); color:var(--text); }
+          @media (max-width:575px){ width:100%; }
+          
+        }
+      }
+    }
+
+    .form-name{
+      margin:0 0 24px; line-height:30px; font-size:30px; color:#fff;
+      @media (max-width:575px){ margin:0 0 15px; line-height:normal; font-size:25px; }
+      &::before{
+        content:""; display:block; width:56px; height:56px; margin:0 0 30px;
+        background:url('../images/form-name-heading-icon.svg') left center no-repeat;
+      }
+    }
+
+    .short-text{
+      margin:0 0 27px; line-height:27px; font-size:15px; color:#90E0DC;
+      @media (max-width:575px){ line-height:1.6; }
+    }
+  }
+}

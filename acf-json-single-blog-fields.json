@@ -1,0 +1,171 @@
+{
+  "key": "group_single_blog_fields",
+  "title": "Single Blog Post Fields",
+  "fields": [
+    {
+      "key": "field_single_post_gallery",
+      "label": "Post Gallery",
+      "name": "post_gallery",
+      "type": "gallery",
+      "instructions": "Add images to create a gallery in the post content",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "insert": "append",
+      "library": "all",
+      "min": "",
+      "max": "",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_single_post_header_image",
+      "label": "Header Background Image",
+      "name": "header_featured_image",
+      "type": "image",
+      "instructions": "Custom image for the post header background (overrides post thumbnail)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_single_post_author",
+      "label": "Author Name",
+      "name": "post_author",
+      "type": "text",
+      "instructions": "Custom author name for the post",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_single_post_read_time",
+      "label": "Estimated Read Time",
+      "name": "read_time",
+      "type": "number",
+      "instructions": "Estimated reading time in minutes",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "minutes",
+      "min": "",
+      "max": "",
+      "step": ""
+    },
+    {
+      "key": "field_single_post_tags",
+      "label": "Post Tags",
+      "name": "post_tags",
+      "type": "text",
+      "instructions": "Comma-separated tags for the post",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "tag1, tag2, tag3",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_single_post_meta_description",
+      "label": "Meta Description",
+      "name": "meta_description",
+      "type": "textarea",
+      "instructions": "Custom meta description for SEO (overrides excerpt)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": ""
+    },
+    {
+      "key": "field_single_post_related_posts_title",
+      "label": "Related Posts Section Title",
+      "name": "related_posts_title",
+      "type": "text",
+      "instructions": "Custom title for the related posts section",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Lasiet citus rakstus un padomus",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 1,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for single blog post page"
+}

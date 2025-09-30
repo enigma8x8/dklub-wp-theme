@@ -1,0 +1,125 @@
+.single-blog-post {
+    
+    .entry-content {
+        padding: 49px 0 0 0;
+
+        h2 {
+            margin: 0 0 23px 0;
+            font-size: 30px;
+        }
+
+        h3 {
+            margin: 0 0 23px 0;
+            font-size: 25px;
+        }
+
+        p {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        a {
+            color: #206D69;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            margin-bottom: 45px;
+            
+            li {
+                position: relative;
+                padding: 0 0 0 18px;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    width: 7px;
+                    height: 7px;
+                    background-color: #5c5c5c;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        > img, > p > img {
+            float: left;
+            margin: 0 62px 62px 0;
+            border-radius: 8px;
+
+            @media screen {
+                @media (max-width: 1299px) {
+                    max-width: calc(50% - 30px);
+                    margin: 0 30px 30px 0;
+                }
+
+                @media (max-width: 575px) {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+
+        .inline-gallery-swiper {
+            margin-bottom: 84px;
+
+            @media screen {
+                @media (max-width: 768px) {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .swiper {
+                @media screen {
+                    @media (max-width: 991px) {
+                        width: calc(100% + 30px);
+                        padding-right: 30px;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: calc(100% + 20px);
+                        padding-right: 20px;
+                    }
+                }
+            }
+
+            .swiper-slide {
+                img {
+                    transition: all .3s ease-in-out;
+                    border-radius: 5px;
+
+                    &:hover {
+                        opacity: .85;
+                    }
+                }
+            }
+        }
+    }
+
+    & + .latest-posts {
+        margin-top: 83px;
+        clear: both;
+
+        @media screen {
+            @media (max-width: 768px) {
+                margin-top: 50px;
+            }
+        }
+    }
+    
+}

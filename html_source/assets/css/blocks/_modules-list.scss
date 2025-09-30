@@ -1,0 +1,32 @@
+.modules-list {
+    display: grid;
+    gap: 66px 60px;
+
+    @media screen {
+        @media (max-width: 1499px) {
+            gap: 50px;
+        }
+
+        @media (max-width: 1399px) {
+            gap: 35px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+    }
+
+    &.grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        @media screen {
+            @media (max-width: 1199px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            @media (max-width: 640px) {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}

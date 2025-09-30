@@ -1,0 +1,50 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    margin: 60px 0 0 0;
+
+    @media screen {
+        @media (max-width: 1199px) {
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+
+        .page-numbers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 51px;
+            background-color: #fff;
+            border: 1px solid #929595;
+            color: #929595;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 5px;
+
+            svg {
+                path {
+                    transition: all .3s ease-in-out;
+                }
+            } 
+
+            &.current, &:hover {
+                background: #206D69;
+                border-color: #206D69;
+                color: #fff;
+
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }   
+            }
+        }
+    }
+}

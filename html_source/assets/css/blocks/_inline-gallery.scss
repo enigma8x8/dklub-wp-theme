@@ -1,0 +1,19 @@
+.inline-gallery {
+    .swiper { 
+        width: calc(50vw + (1780px / 2));
+
+        @media screen {
+            @media (max-width: 1799px) {
+                width: calc(100% + 60px);
+            }
+
+            @media (max-width: 991px) {
+                width: calc(100% + 30px);
+            }
+
+            @media (max-width: 575px) {
+                width: calc(100% + 20px);
+            }
+        }
+    }
+}

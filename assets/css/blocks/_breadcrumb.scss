@@ -1,0 +1,96 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 33px 0;
+    line-height: 14px;
+    font-size: 14px;
+    color: #000;
+
+    @media screen {
+        @media (max-width: 768px) {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        color: #C69866;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .separator {
+        padding: 0 7px;
+        color: #C69866;
+    }
+
+    .current {
+        color: #8196A8;
+    }
+}
+
+.breadcrumbs-holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    z-index: 1;
+
+    @media screen {
+        @media (max-width: 575px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 33px;
+        }
+    }
+
+    .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0 7px;
+        padding: 4px 7px;
+        background: rgba(57, 74, 88, 0.1);
+        line-height: 16px;
+        letter-spacing: 2px;
+        color: #C69866;
+        font-size: 12px;
+        border-radius: 100px;
+
+        @media screen {
+            @media (max-width: 575px) {
+                order: 1;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 14px;
+            height: 12px;
+            background: url('../images/breadcrumb-link-arrow.svg') left center no-repeat
+        }
+
+        &:hover {
+            background: rgba(57, 74, 88, 0.15);
+        }
+
+        &.bg-white {
+            background: #fff !important;
+
+            &:hover {
+                background: #dedede !important;
+            }
+        }
+    }
+
+    .breadcrumbs {
+        @media screen {
+            @media (max-width: 575px) {
+                order: 2;
+            }
+        }
+    }
+}

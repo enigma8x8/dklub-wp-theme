@@ -1,0 +1,113 @@
+.post-item {
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+
+    img {
+        width: 100%;
+        transition: all .3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(144, 224, 220, 0.5) 0%, #206D69 73.01%);
+        mix-blend-mode: multiply;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 35px 78px 35px;
+        z-index: 1;
+        border-radius: 5px;
+
+        @media screen {
+            @media (max-width: 1499px) {
+                padding: 0 25px 40px 25px;
+            }
+        }
+    }
+
+    .entry-title { 
+        margin: 0 0 20px 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #dfeceb;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .excerpt {
+        margin: 0;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .category-sticker {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -13px;
+        right: 42px;
+        height: 27px;
+        padding: 0 18px;
+        padding-bottom: 1px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        border-radius: 30px;
+        z-index: 2;
+
+        &.bg-orange {
+            background-color: #EBA714;
+
+            &:hover {
+                background-color: darken(#EBA714, 5%);
+            }
+        }
+
+        &.bg-light-green {
+            background-color:#73AB68;
+            
+            &:hover {
+                background-color: darken(#73AB68, 5%);
+            }
+        }
+
+        &.bg-blue {
+            background-color: #6295CF;
+
+            &:hover {
+                background-color: darken(#6295CF, 5%);
+            }
+        }
+    }
+
+    &:hover {
+        &::before {
+            opacity: .9;
+        }
+    }
+}

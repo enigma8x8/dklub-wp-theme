@@ -1,0 +1,19 @@
+.posts-swiper {
+    .swiper {
+        .swiper-slide {
+            padding-top: 15px;
+        }
+
+        @media screen {
+            @media (max-width: 991px) {
+                width: calc(100% + 30px);
+                padding-right: 30px;
+            }
+
+            @media (max-width: 768px) {
+                width: calc(100% + 20px);
+                padding-right: 20px;
+            }
+        }
+    }
+}
